@@ -1,4 +1,5 @@
 import java.util.StringJoiner;
+import java.util.Scanner;
 
 public class Main {
 
@@ -10,13 +11,21 @@ public class Main {
             }
         }
     }
+    public static void playGame(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter Column");
+        int column = userInput.nextLine;
+        System.out.println("Enter Row");
+        int row = userInput.nextLine;
+        row = row -1;
+        column = column -1;
+    }
+
     public static void main(String[] args) {
 
         System.out.println("\n\n*****TIC-TAC-TOE*****");
         String[][] gameBoard = {{" ", " ", " "},
                                 {" ", " ", " "}, {" ", " ", " "}};
         showBoard(gameBoard);
-
-
     }
 }
