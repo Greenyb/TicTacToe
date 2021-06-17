@@ -22,6 +22,12 @@ public class Main {
 
     }
 
+    public static void update(int column, int row) {
+    gameBoard[column][row] = 'X';
+        Random rand = new Random();
+        while(gameboard[random.randint(0, 2)][random.randint(0,2 ) ] == "X" )  {
+
+        }
     public static void main(String[] args) {
 
         System.out.println("\n\n*****TIC-TAC-TOE*****");
@@ -32,3 +38,7 @@ public class Main {
         System.out.println(gameBoard);
     }
 }
+
+    public static void main(String[] args) {
+
+    }
